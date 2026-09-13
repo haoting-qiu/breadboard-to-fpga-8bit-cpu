@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Editor and temporary files
+*.swp
+*.tmp
+*.bak
+~$*
+
+# Generated simulation and waveform files
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+*.out
+
+# FPGA/tool generated files
+*.bit
+*.fs
+*.jed
+*.rpt
+*.log
+*.jou
+*.str
+*.tmp
+impl/
+build/
+dist/
+
+# Python caches
+__pycache__/
+*.pyc
+
