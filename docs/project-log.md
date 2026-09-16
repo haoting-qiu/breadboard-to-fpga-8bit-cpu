@@ -1,111 +1,86 @@
 # Project Log
 
-This log records what was done, how it was tested, what happened, and what the next small step is. Keep entries short and factual. It does not need to be polished.
+I use this file to keep short notes about my progress. The notes do not need to
+be perfect. I just want to remember what I did and what I should do next.
 
-## 2026-09-13 - Local Git setup
+## 2026-09-13 - Started using Git
 
-Goal:
-Set up local version control for the project and save the initial planning documents.
+Plan:
+Start using Git and save my project plan.
 
-What I changed:
-- Initialized the project as a local Git repository.
-- Renamed the default branch to `main`.
-- Added `README.md`, `.gitignore`, and `docs/references.md`.
-- Added the project plan in Markdown and Word formats.
-- Created the first commit: `docs: add initial project plan`.
+What I did:
+- Started a Git repository on my computer.
+- Changed the main branch name to `main`.
+- Added the README, `.gitignore`, references, and project plan.
+- Saved the first Git commit.
 
-Test performed:
-- Ran `git status` to confirm the working tree was clean after the commit.
+Check:
+- Used `git status` to check that all files were saved.
 
-Expected result:
-The project should be tracked locally by Git with all initial files committed.
+Result:
+The project files were saved in Git on my computer.
 
-Actual result:
-The project is now tracked locally on the `main` branch.
+Problem:
+- The project was only on my computer and was not on GitHub yet.
 
-Problem and diagnosis:
-- The GitHub remote repository has not been created or connected yet.
-- The project exists only locally for now.
-
-Next smallest step:
-Create a private GitHub repository and push the local `main` branch.
+Next:
+Create a private GitHub repository and upload the project.
 
 ---
 
-## 2026-09-16 - GitHub setup and hardware research
+## 2026-09-16 - GitHub and hardware information
 
-Goal:
-Create a private GitHub backup and collect reliable references for the planned
-breadboard-to-FPGA build.
+Plan:
+Upload the project to a private GitHub repository and collect useful hardware
+information.
 
-What I changed:
-- Created the private GitHub repository
-  `haoting-qiu/breadboard-to-fpga-8bit-cpu` and connected it as `origin`.
-- Pushed the local `main` branch to GitHub.
-- Added official datasheets for the identified 74LS/74HC devices, AT28C16,
-  NE555, and Arduino Nano.
-- Added official Tang Nano 9K, GOWIN EDA, and Logisim-evolution resources.
-- Transcribed the seller's component list into `docs/kit-inventory.md`.
-- Compared the two candidate kits against the available tutorials and parts
-  lists. The final purchase has not yet been recorded.
+What I did:
+- Created a private GitHub repository and uploaded the project.
+- Added datasheets for the chips that I know are in the kit.
+- Added links for Tang Nano 9K, GOWIN EDA, and Logisim-evolution.
+- Wrote the seller's parts list in `docs/kit-inventory.md`.
+- Compared two 8-bit computer kits. I have not recorded the final purchase yet.
 
-Test performed:
-- Checked the Git remote address and confirmed that `main` pushed successfully.
-- Confirmed that the repository was synchronized after the documentation
-  commits.
-- Used manufacturer or project-maintainer pages for the references that could
-  be identified confidently.
+Check:
+- Checked the GitHub address and confirmed that the files were uploaded.
+- Used official pages for the datasheets and software links when possible.
 
-Expected result:
-The project should have an off-device private backup and a traceable starting
-point for checking components and technical information.
+Result:
+The project is now backed up on GitHub. I also have a starting list of parts
+and references.
 
-Actual result:
-The private GitHub repository is synchronized, and the known hardware and tool
-references are documented.
+Things to check later:
+- Add the exact kit page and tutorial link.
+- Check the brand and full number on the `74LS219` chip.
+- Count the parts and check the chip numbers when the package arrives.
 
-Problem and diagnosis:
-- The exact kit product page and tutorial link have not yet been recorded.
-- The manufacturer and complete marking of the listed `74LS219` are unknown,
-  so no datasheet was assigned to it.
-- Seller quantities and part markings cannot be verified until the package
-  arrives.
-
-Next smallest step:
-After choosing the kit, save its product/tutorial link and purchase manifest in
-the repository.
+Next:
+After I choose the kit, save the product link and order information.
 
 ---
 
 ## Template
 
-Copy this block for each new work session.
+I can copy this block for a new entry.
 
 ```markdown
-## YYYY-MM-DD - Short session title
+## YYYY-MM-DD - Short title
 
-Goal:
-What was the one main thing I wanted to accomplish?
+Plan:
+What did I want to do today?
 
-What I changed:
-- What did I build, edit, wire, test, read, or document?
-- Keep this factual and specific.
+What I did:
+- What did I build, change, read, or test?
 
-Test performed:
-- What did I do to check whether it worked?
-- Include commands, measurements, inputs, expected outputs, or observations when useful.
+Check:
+- How did I check my work?
 
-Expected result:
-What did I expect to happen?
+Result:
+What happened?
 
-Actual result:
-What actually happened?
+Problems or things to check later:
+- What did not work or still needs to be checked?
 
-Problem and diagnosis:
-- What went wrong?
-- What do I think caused it?
-- What evidence supports that guess?
-
-Next smallest step:
-What is the next action that should take 30 minutes or less?
+Next:
+What should I do next?
 ```
